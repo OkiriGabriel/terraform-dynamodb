@@ -44,7 +44,7 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
 }
 
 resource "aws_dynamodb_table" "basic-dynamodb-table-2" {
-  name           = "work"
+  name           = "Work"
   billing_mode   = var.billing_mode
 #   read_capacity  = 20
 #   write_capacity = 20
@@ -88,8 +88,10 @@ resource "aws_dynamodb_table" "basic-dynamodb-table-2" {
   }
 }
 
+
+
 resource "aws_dynamodb_table" "basic-dynamodb-table-3" {
-  name           = "exhibition"
+  name           = "Exhibition"
   billing_mode   = var.billing_mode
 #   read_capacity  = 20
 #   write_capacity = 20
@@ -134,7 +136,7 @@ resource "aws_dynamodb_table" "basic-dynamodb-table-3" {
 }
 
 resource "aws_dynamodb_table" "basic-dynamodb-table-4" {
-  name           = "artist"
+  name           = "Biography"
   billing_mode   = var.billing_mode
 #   read_capacity  = 20
 #   write_capacity = 20
@@ -177,7 +179,6 @@ resource "aws_dynamodb_table" "basic-dynamodb-table-4" {
     Environment = "production"
   }
 }
-
 resource "aws_dynamodb_table_item" "item" {
   table_name = aws_dynamodb_table.basic-dynamodb-table.name
   hash_key   = aws_dynamodb_table.basic-dynamodb-table.hash_key
