@@ -57,3 +57,47 @@ resource "aws_dynamodb_table_item" "item" {
 }
 ITEM
 }
+
+
+resource "aws_dynamodb_table_item" "item2" {
+  table_name = aws_dynamodb_table.basic-dynamodb-table.name
+  hash_key   = aws_dynamodb_table.basic-dynamodb-table.hash_key
+
+  item = <<ITEM
+{
+  "Data": {"S": "Art"},
+  "Name": {"S": "wwww"},
+  "Image": {"S": "fejfevjenoenoveoe"},
+  "Description": {"S": "hdhhdh jdjj ududu"}
+}
+ITEM
+}
+
+resource "aws_dynamodb_table_item" "item3" {
+  table_name = aws_dynamodb_table.basic-dynamodb-table.name
+  hash_key   = aws_dynamodb_table.basic-dynamodb-table.hash_key
+
+  item = <<ITEM
+{
+  "Data": {"S": "Art"},
+  "Name": {"S": "wwww"},
+  "Image": {"S": "fejfevjenoenoveoe"},
+  "Description": {"S": "hdhhdh jdjj ududu"}
+}
+ITEM
+}
+
+
+resource "aws_dynamodb_table_item" "item4" {
+  table_name = aws_dynamodb_table.basic-dynamodb-table.name
+  hash_key   = aws_dynamodb_table.basic-dynamodb-table.hash_key
+
+  item = <<ITEM
+{
+  "Data": {"S": "Art"},
+  "Name": {"S": "wwww"},
+  "Image": {"S": "fejfevjenoenoveoe"},
+  "Description": {"S": "hdhhdh jdjj ududu"}
+}
+ITEM
+}
