@@ -68,5 +68,5 @@ jobs:
         terraform plan
         
         echo "Running Terraform Apply"
-        terraform apply -auto-approve
+        terraform destroy -auto-approve
       working-directory: ${{ github.event.inputs.tfpath }}
